@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Food Recipe</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <!--Materialize CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!--Material icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--Materialize JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!--Font Awesome link-->
+  <script src="https://use.fontawesome.com/abd289e58f.js"></script>
+</head>
+
+<body>
+  <div class="s004">
+    <form>
+      <fieldset class='main'>
+        <legend>Looking for Food Recipe?</legend>
+        <div class="inner-form">
+          <div class="suggest">
+            <span>suggestions:</span>
+            <div class="suggestion-wrap">
+              <span class="searchable">Burger</span>
+              <span class="searchable">Cake</span>
+              <span class="searchable">Chicken</span>
+              <span class="searchable">Pasta</span>
+              <span class="searchable">Pizza</span>
+            </div>
+          </div>
+          <div class="input-field">
+            <input id="user-input" class="form-control" type="text" class="validate">
+            <label for="text" data-error="wrong" data-success="right">type the food</label>
+            <button class="btn blue accent-4 btn-floating  waves-effect waves-dark" type="submit" name="action"
+              id="submit"><i class="material-icons">search</i></button>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Recipe shower field-->
+          <div class="col s12">
+            <div id="recipe-list" class="section">
+              <div id="recipe1" class="col l4 m6 s12">
+              </div>
+              <div id="recipe2" class="col l4 m6 s12">
+              </div>
+              <div id="recipe3" class="col l4 m6 s12">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn blue accent-4 waves-effect waves-dark col s4" type="submit"
+          style="display:none; margin-bottom:10px;float:right" name="action" id="load-more">More</button>
+  </div>
+  <script src="js/extention/choices.js"></script>
+  <script>
+    var textPresetVal = new Choices('#choices-text-preset-values',
+      {
+        removeItemButton: true,
+      });
+
+  </script>
+  <!--Firebase Javascript link-->
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+
+  <!--Link to external Javascript file-->
+  <script src="./js/app.js"></script>
+</body>
+
+<body>
+
+</body>
+
+</html>
