@@ -25,10 +25,6 @@ This project is a web application that displays food recipes fetched from API. U
 
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
 
-## License
-
-This project is licensed under the MIT License.
-
 ---
 
 Feel free to reach out if you have any questions or need further assistance. Enjoy using LumiTabs to keep your browsing sessions organized and productive!
