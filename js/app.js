@@ -32,7 +32,6 @@ function testAjax(queryURL) {
         var spanTitle = $("<span>");
         spanTitle.addClass("card-title");
         label = data.hits[i].recipe.label;
-        spanTitle.text(label);
         //This appends the recipe title/label to the recipe image.
         cardImg.append(spanTitle);
 
@@ -55,7 +54,7 @@ function testAjax(queryURL) {
         // Add the class activator and add "Ingredients" text.
         activateIngredients
           .addClass("card-title activator")
-          .text("Ingredients");
+          .text(label);
 
         // Create button that will open the card reveal and show the ingredients.
         revealIngredientsIcon = $("<i>");
