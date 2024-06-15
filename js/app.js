@@ -55,7 +55,7 @@ function testAjax(queryURL) {
         // Add the class activator and add "Ingredients" text.
         activateIngredients
           .addClass("card-title activator")
-          .text("Ingredients");
+          .text(label);
 
         // Create button that will open the card reveal and show the ingredients.
         revealIngredientsIcon = $("<i>");
